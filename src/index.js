@@ -7,10 +7,12 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 const Tab = createMaterialTopTabNavigator();
 const Stack = createNativeStackNavigator();
+
+import { styles } from './styles';
+
 import Conversations from "./screens/home/";
 import Settings from './screens/settings/';
 import Chat from './screens/chat/';
-import { styles } from './styles';
 
 function Home({ navigation }) {
 	return (
@@ -37,11 +39,16 @@ export default function App() {
 	return (
 		<NavigationContainer>
 			<StatusBar style="auto" />
+
 			<Stack.Navigator>
 				<Stack.Screen
 					name="Home"
 					component={Home}
-					options={{ headerShown: false }} />
+					options={{
+						headerShown: false
+					}}
+				/>
+				
 				<Stack.Screen
 					name="Settings"
 					component={Settings}
@@ -50,7 +57,12 @@ export default function App() {
 						headerStyle: {
 							backgroundColor: '#101010',
 						}
-					}} />
+					}}
+				/>
+				<Stack.Screen
+					name="Chats"
+					component={Chat}
+				/>
 			</Stack.Navigator>
 		</NavigationContainer>
 	);

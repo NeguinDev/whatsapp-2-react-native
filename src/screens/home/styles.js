@@ -1,9 +1,11 @@
 import { StyleSheet } from 'react-native';
+import { useTheme } from '@react-navigation/native';
 
 export const styles = StyleSheet.create({
 	body: {
 		flex: 1,
 		backgroundColor: "#101010",//Black
+
 	},
 	header: {
 		display: "flex",
