@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "agenda",
-    "slug": "agenda",
+    "name": "whatsapp2",
+    "slug": "whatsapp2",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
     ]
   },
-  "name": "agenda"
+  "name": "whatsapp2"
 }
