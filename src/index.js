@@ -40,15 +40,15 @@ export default function App() {
 		<NavigationContainer>
 			<StatusBar style="auto" />
 
-			<Stack.Navigator>
+			<Stack.Navigator initialRouteName='Home'>
 				<Stack.Screen
 					name="Home"
 					component={Home}
 					options={{
-						headerShown: false
+						headerShown: false,
 					}}
 				/>
-				
+
 				<Stack.Screen
 					name="Settings"
 					component={Settings}

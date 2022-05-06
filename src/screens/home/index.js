@@ -4,7 +4,6 @@ import { Card } from './components/';
 import { styles } from './styles';
 import { createStackNavigator } from '@react-navigation/stack';
 const Stack = createStackNavigator();
-import Chat from '../chat';
 
 const Home = ({ navigation }) => {
 	const [cards, setCards] = React.useState([]);
@@ -14,27 +13,35 @@ const Home = ({ navigation }) => {
 			<View style={styles.container}>
 				<Card
 					avatar="https://whatsfacil.com/assets/img/default-avatar.png"
-					nick="João"
-					message="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+					nick="Fillipe Boiola"
+					message="Quando vc vai comer minha bundinha?"
 					hour="10:00"
-					onPress={() => navigation.navigate('Chats', { nick: 'João' })}
+					onPress={() => navigation.navigate('Chats', { nick: 'Fillipe Boiola' })}
 					view={1}
 				/>
 				<Card
 					avatar="https://whatsfacil.com/assets/img/default-avatar.png"
-					nick="João"
-					message="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+					nick="Carlos Gay"
+					message="Estou na parada gay!"
 					hour="10:00"
-					onPress={() => navigation.navigate('Chats', { nick: 'João' })}
+					onPress={() => navigation.navigate('Chats', { nick: 'Carlos Gay' })}
 					view={2}
 				/>
 				<Card
 					avatar="https://whatsfacil.com/assets/img/default-avatar.png"
-					nick="João"
-					message="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+					nick="Mikael Propstituta Gratis"
+					message="Estou livre hj, vai me comer?"
 					hour="10:00"
-					onPress={() => navigation.navigate('Chats', { nick: 'João' })}
+					onPress={() => navigation.navigate('Chats', { nick: 'Mikael Propstituta Gratis' })}
 					view={3}
+				/>
+				<Card
+					avatar="https://whatsfacil.com/assets/img/default-avatar.png"
+					nick="Eriton Gay Emcubado"
+					message="Vai me comer no sigilo?"
+					hour="10:00"
+					onPress={() => navigation.navigate('Chats', { nick: 'Eriton Gay Emcubado' })}
+					view={2}
 				/>
 			</View>
 		</ScrollView>
